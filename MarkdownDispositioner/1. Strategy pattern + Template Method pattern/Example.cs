@@ -102,32 +102,25 @@ namespace DesignPatterns
             BurgerContext burgerContext = new BurgerContext();
 
             burgerContext.SetBurger(new ChickenBurger());
-            burgerContext.PrepareBurger();  // Output: Preparing Chicken Burger
+            burgerContext.PrepareBurger();  /
 
             burgerContext.SetBurger(new BeefBurger());
-            burgerContext.PrepareBurger();  // Output: Preparing Beef Burger
+            burgerContext.PrepareBurger();  
 
             burgerContext.SetBurger(new VeggieBurger());
-            burgerContext.PrepareBurger();  // Output: Preparing Veggie Burger
+            burgerContext.PrepareBurger();  
 
             Console.WriteLine();
 
             // Template Method Pattern Example
             Meal pastaMeal = new PastaMeal();
             pastaMeal.PrepareMeal();
-            // Output:
-            // Preparing pasta ingredients
-            // Cooking pasta
-            // Serving the meal
 
             Console.WriteLine();
 
             Meal saladMeal = new SaladMeal();
             saladMeal.PrepareMeal();
-            // Output:
-            // Preparing salad ingredients
-            // Mixing salad
-            // Serving the meal
+           
         }
     }
 }
